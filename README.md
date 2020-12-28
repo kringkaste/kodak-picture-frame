@@ -12,7 +12,6 @@ All pictures will be prepared as follow:
 
 ```
 docker build . -t kringkaste/kodak-piture-frame
-docker run "${PWD}:/images" --rm -it kringkaste/kodak-piture-frame /usr/local/bin/run.sh
 ```
 
 ## Run
