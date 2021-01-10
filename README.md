@@ -19,5 +19,5 @@ docker build . -t kringkaste/kodak-piture-frame
 Run this command within the image folder, it will create a new folder named "converted-%Y-%m-%d-%H-%M-%S" with the converted pictures:
 
 ```
-docker run "${PWD}:/images" --rm -it kringkaste/kodak-piture-frame /usr/local/bin/run.sh
+docker run -v "${PWD}:/images" --rm -it kringkaste/kodak-piture-frame /usr/local/bin/run.sh
 ```
