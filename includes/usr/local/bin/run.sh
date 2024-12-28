@@ -11,5 +11,5 @@ for i in *.*; do
   filename=$(basename "$i")
   newname="${filename%.*}"
   echo "${i}"
-  convert "${i}" -resize "800x800>" -auto-orient -strip "converted-${date}/${newname}.jpg"
+  magick "${i}" -resize "800x800>" -auto-orient -strip "converted-${date}/${newname}.jpg"
 done
